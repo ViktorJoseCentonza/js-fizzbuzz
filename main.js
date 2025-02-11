@@ -4,7 +4,9 @@ Scrivi un programma che stampi i numeri da 1 a 100, ma per i multipli di 3 stamp
 let output;
 for (let i = 0; i <= 100; i++) {
 
-    if (i % 3 == 0) {
+    if (i % 5 == 0 && i % 3 == 0) {
+        output = "FizzBuzz"
+    } else if (i % 3 == 0) {
         output = "Fizz";
 
     } else if (i % 5 == 0) {
@@ -13,8 +15,5 @@ for (let i = 0; i <= 100; i++) {
     } else {
         output = i;
     }
-
     console.log(`the number is ${output}`);
-
-
 }
